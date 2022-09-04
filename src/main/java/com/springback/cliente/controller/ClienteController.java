@@ -20,31 +20,31 @@ public class ClienteController {
 	}
 
 	@GetMapping(value = "/clientes")
-	private ResponseEntity<List<Cliente>> getAllClientes(){
+	public ResponseEntity<List<Cliente>> getAllClientes(){
 		return ResponseEntity.ok(clienteService.findAll());
 	}
 
 	@GetMapping(value = "/cliente/{rut}")
-	private ResponseEntity<Cliente> getCliente(@PathVariable String rut){
+	public ResponseEntity<Cliente> getCliente(@PathVariable String rut){
 		Cliente getCliente =clienteService.getClienteByRut(rut);
 		return ResponseEntity.ok(getCliente);
 	}
 
 	@PostMapping(value = "/cliente/crear")
-	private ResponseEntity<Cliente> saveCliente(@RequestBody Cliente cliente){
+	public ResponseEntity<Cliente> saveCliente(@RequestBody Cliente cliente){
 		Cliente response = clienteService.createCliente(cliente);
 		return ResponseEntity.ok(response);
 	}
 
 	@PutMapping(value = {"/cliente/{rut}"})
-	private ResponseEntity<Cliente> updateCliente(@PathVariable String rut, Cliente cliente){
+	public ResponseEntity<Cliente> updateCliente(@PathVariable String rut, Cliente cliente){
 		Cliente response = clienteService.UpdateCliente(rut, cliente);
 		return ResponseEntity.ok(response);
 	}
 
 	
 	@DeleteMapping(value = "/cliente/{rut}")
-	private ResponseEntity<Boolean> deleteCliente (@PathVariable String rut){
+	public ResponseEntity<Boolean> deleteCliente (@PathVariable String rut){
 		Boolean response = clienteService.deleteCliente(rut);
 		return ResponseEntity.ok(response);
 	}
