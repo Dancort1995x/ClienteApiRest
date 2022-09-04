@@ -15,7 +15,7 @@ _Requisitos para levantar backend :_
 ### variables de entorno 👇
 * Sera necesario indicar en la configuracion del ide, los siguientes variables de entorno:
 ```
-${ENV_DATASOURCE_URL}
+${DATABASE_URL}
 ${ENV_USR_POSTGRESS}
 ${ENV_PSW_POSTGRESS}
 
