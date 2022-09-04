@@ -2,8 +2,6 @@ package com.springback.cliente.exception;
 
 import com.springback.cliente.config.ErrorCode;
 
-import java.io.Serial;
-
 public class GenericException extends RuntimeException{
 
     private static final long serialVersionUID =1L;
