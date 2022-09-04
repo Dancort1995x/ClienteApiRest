@@ -23,7 +23,13 @@ public class ClienteController {
 	private ResponseEntity<List<Cliente>> getAllClientes(){
 		return ResponseEntity.ok(clienteService.findAll());
 	}
-	
+
+	@GetMapping(value = "/cliente/{rut}")
+	private ResponseEntity<Cliente> getCliente(@PathVariable String rut){
+		Cliente getCliente =clienteService.getClienteByRut(rut);
+		return ResponseEntity.ok(getCliente);
+	}
+
 	@PostMapping(value = "/cliente/crear")
 	private ResponseEntity<Cliente> saveCliente(@RequestBody Cliente cliente){
 		Cliente response = clienteService.createCliente(cliente);

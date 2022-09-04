@@ -5,7 +5,7 @@ public enum ErrorCode {
     RUT_FOUND(100,"rut se encuentra registrado"),
     EMAIL_FOUND(200,"Email ya registrado"),
     EMAIL_UPDATE_FOUND(201,"email ya registrado, si es del cliente no indicar"),
-    CLIENTE_NOT_FOUND(300,"No se encontro persona en la base de datos"),
+    CLIENTE_NOT_FOUND(300,"No se encontro el rut de la persona registrada en la base de datos"),
 
     //Errores genericos
     ERROR_NO_CONTROLADO(10,"Error no controlado"),

@@ -53,8 +53,8 @@ public class ClienteService {
 		if(cliente.getEmail()!=null){
 			findClienteUpdate.setEmail(cliente.getEmail());
 		}
-		if(cliente.getTelfono()!=null) {
-			findClienteUpdate.setTelfono(cliente.getTelfono());
+		if(cliente.getTelefono()!=null) {
+			findClienteUpdate.setTelefono(cliente.getTelefono());
 		}
 		if(cliente.getEdad()!=null){
 			findClienteUpdate.setEdad(cliente.getEdad());
