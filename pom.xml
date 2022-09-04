@@ -15,7 +15,7 @@
 	<name>ApiClienteCrud</name>
 	<description>Api Rest Cliente</description>
 	<properties>
-		<java.version>16</java.version>
+		<java.version>13</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
